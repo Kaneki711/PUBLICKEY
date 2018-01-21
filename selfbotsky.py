@@ -16,131 +16,163 @@ print "===[SUKSES LOGIN]==="
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage= """
+╔═══════════════════
+║╠❂➣ YOUR COMMAND
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ COMMAND SELF
+╠═══════════════════
+╠❂➣ Me
+╠❂➣ Creator
+╠❂➣ Speed
+╠❂➣ Debug Speed
+╠❂➣ Bot mid
+╠❂➣ Details group:
+╠❂➣ Ginfo
+╠❂➣ System
+╠❂➣ Cpu
+╠❂➣ Karnel
+╠❂➣ Purge
+╠❂➣ Recover
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ GROUP
+╠═══════════════════
+╠❂➣ Ban group:
+╠❂➣ Getqr
+╠❂➣ Buka
+╠❂➣ Tutup
+╠❂➣ List ban group
+╠❂➣ Group name:
+╠❂➣ Glist
+╠❂➣ Clean
+╠❂➣ Cancel
+╠❂➣ Lurking
+╠❂➣ Lurking result
+╚═══════════════════
+╔═══════════════════
+║╠❂➣  Steal
+╠═══════════════════
+╠❂➣ Steal Bio @
+╠❂➣ Steal status @
+╠❂➣ Steal mid @
+╠❂➣ Steal contact @
+╠❂➣ Steal cover
+╠❂➣ Steal pict
+╠❂➣ Steal group pict
+╠❂➣ Midpict: 
+╚═══════════════════
+╔═══════════════════
+║╠❂➣  Settings
+╠═══════════════════
+╠❂➣ Join on/off
+╠❂➣ Leave on/off
+╠❂➣ Like on/off
+╠❂➣ Comment:on/off
+╠❂➣ Add comment:
+╠❂➣ Check comment
+╠❂➣ Pesan:on/off
+╠❂➣ Pesan add
+╠❂➣ Check pesan
+╠❂➣ Status
+╠❂➣ Add teman:on/off
+╠❂➣ Gcancel
+╠❂➣ Notice
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Welcome
+╠═══════════════════
+╠❂➣ Welcome on/off
+╠❂➣ Welcome add:
+╠❂➣ Check welcome
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Kicker 
+╠═══════════════════
+╠❂➣ Cleanse
+╠❂➣ Nk [Name]
+╠❂➣ Vkick @
+╠❂➣ Kick:[mid]
+╠❂➣ Ban @
+╠❂➣ Unban @
+╠❂➣ Banlist
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Spam 
+╠═══════════════════
+╠❂➣ Spam on/off [jmlh] [text]
+╠❂➣ Spam add:[Text]
+╠❂➣ Spam change:[Text]
+╠❂➣ Spam mulai
+╠❂➣ Spam gift
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Sosmed 
+╠═══════════════════
+╠❂➣ Lirik:
+╠❂➣ Music:
+╠❂➣ Video:
+╠❂➣ Yt:
+╠❂➣ Wiki:
+╠❂➣ Ig:
+╠❂➣ Kalender
+╠❂➣ Zodiak
+╠❂➣ Image
+╠❂➣ Kapan
+╠❂➣ Siapa
+╠❂➣ Apakah
+╠❂➣ Dosa @
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Translate 
+╠═══════════════════
+╠❂➣ Traid:Indonesia
+╠❂➣ Traen:English
+╠❂➣ Tratha:Thailand
+╠❂➣ Traja:Japan
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Bot 
+╠═══════════════════
+╠❂➣ Gabung
+╠❂➣ Pulang
+╠❂➣ Allname:
+╠❂➣ Allstatus:
+╠❂➣ Remove chat
+╠❂➣ Bot restart
+╠❂➣ Bot1-10 name
+╠❂➣ Bot1-up Backup
+╠❂➣ Set member:
+╠❂➣ Selfbot versi
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Protection
+╠═══════════════════
+╠❂➣ Protection:on
+╠❂➣ Protection:off
+╠❂➣ Invite:on/off
+╠❂➣ Name:on/off
+╠❂➣ Qr:on/off
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Spesial
+╠═══════════════════
+╠❂➣ Info @
+╠❂➣ Time
+╠❂➣ Ping
+╠❂➣ Pm cast
+╠❂➣ Bcast
+╠❂➣ Crash
+╠❂➣ Mimic:on/off
+╠❂➣ Mimic:add @
+╠❂➣ Mimic:del @
+╠❂➣ Mimic list
+╚═══════════════════
+╔═══════════════════
+║╠❂➣ Selfbot 
+║╠❂➣ Team SkyLine
+╚═══════════════════
 
-===============
-COMMAND SELFBOT
-===============
-||>> Purge
-||>> Recover
-||>> Spamg[on/off][no][txt]
-||>> Spam add:[text]
-||>> Spam change:[text]
-||>> Spam start:[number]
-||>> Say [text]
-||>> Me
-||>> Speed
-||>> Debug speed
-||>> Bot mid
-||>> Creator
-||>> System
-||>> Kernel
-||>> Cpu
-||>> Mc:[mid]
-||>> Lurking
-||>> Lurking result
-||>> Link open
-||>> Link close
-||>> Gurl
-||>> Remove chat
-||>> Bot restart
-||>> Bot1-6 rename:[text]
-||>> All rename:[text]
-||>> Allbio:[text]
-||>> Bot1-6 clone @[name]
-||>> Comment:[text]
-||>> Message:[text]
-||>> Bot1-6 backup run
-||>> Group name:[text]
-||>> Set member:
-||>> Steal Bio @[name]
-||>> Steal status @[name]
-||>> Steal mid @[name]
-||>> Steal contact @[name]
-||>> Steal cover @[name]
-||>> Steal pict @[name]
-||>> Steal group pict
-||>> Midpict:[mid]
-||>> Copy @[name]
-||>> Kembali ke asli
-||>> Protect:low
-||>> Protect:hight
-||>> Ban @[name]
-||>> Unban @[name]
-||>> Ban group:
-||>> Del ban:
-||>> List ban group
-||>> Banned[send contact]
-||>> Unbanned[send contact]
-||>> Ban repeat @[name]
-||>> Blacklist all
-||>> Ban cek
-||>> Clear banlist
-||>> Mimic:on/off
-||>> Mimic:add: @[name]
-||>> Mimic:del: @[name]
-||>> ListTarget
-||>> Invite:[mid]
-||>> Gabung
-||>> Pulang
-||>> Auto join:on/off
-||>> Auto leave:on/off
-||>> Auto like:on/off
-||>> Welcome message:on/off
-||>> Auto notice:on/off
-||>> Blockinvite:on/off
-||>> Auto blockqr:on/off
-||>> Namelock:on/off
-||>> Auto add:on/off
-||>> Check message
-||>> Add message:[text]
-||>> Comment:on/off
-||>> Add comment:[text]
-||>> Check comment
-||>> Backup:on/off
-||>> Gcancel:[number]
-||>> Update welcome:[text]
-||>> Check welcome message
-||>> Rejectall
-||>> Clean invites
-||>> Spam gift
-||>> Group list
-||>> Banlist
-||>> Settings
-||>> Ginfo
-||>> Details grup:
-||>> Crash
-||>> Cleanse
-||>> Vkick @
-||>> Nk [name]
-||>> Kick:[mid]
-||>> Lyric [][]
-||>> Music [][]
-||>> Wiki [text]
-||>> Vidio [text]
-||>> Youtube [text]
-||>> Instagram [text]
-||>> Translate-idn [text]
-||>> Translate-eng [text]
-||>> Translate-thai [text]
-||>> Translate-japan [text]
-||>> Info @[name]
-||>> Ping
-||>> Time
-||>> apakah [kerang ajaib]
-||>> Dosa @
-||>> /
-||>> Siapa
-||>> Pm cast [text]
-||>> Broadcast [text]
-||>> Spam @[name]
-||>> Turn off bots
-||>> /kalender
-||>> zodiak
-||>> image
-||>> kapan
-====================
-SUPPORT [D.A.D] TEAM
-====================
 """
 KAC=[cl]
 mid = cl.getProfile().mid
